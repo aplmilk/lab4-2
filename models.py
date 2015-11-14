@@ -18,7 +18,7 @@ class book(models.Model):
     Title = models.CharField(max_length=30)
     AuthorID = models.ForeignKey(Author)
     Publisher = models.CharField(max_length=50)
-    PublishDate = models.DateField()
+    PublishDate = models.DateTimeField()
     Price = models.CharField(max_length=20)
     def __unicode__(self):
         return self.Title 
